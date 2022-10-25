@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2,
+        p {
+            margin: 30px 0 0;
+            padding: 0;
+        }
+
+        p {
+            color: #18c495;
+        }
+
+        .slider {
+            max-width: 1000px;
+            width: 90%;
+            margin: 15px auto;
+            background: #ececec;
+            border-radius: 5px;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+            /*h v b s*/
+        }
+
+        .slick-slider button {
+            display: none !important;
+        }
+
+        .slick-slide {
+            color: #333;
+            padding: 40px 0;
+            font-size: 1.25em;
+            font-family: "Verdana";
+            text-align: center;
+            pointer-events: none;
+        }
+
+        .slick-slide .desc {
+            opacity: 0;
+        }
+
+        .slick-slide .desc>* {
+            transition: all 900ms ease;
+        }
+
+        .slick-slide .desc h2 {
+            position: relative;
+            left: 50px;
+            line-height: 1;
+        }
+
+        .slick-slide .desc p {
+            position: relative;
+            top: 50px;
+            opacity: 0;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+
+        .slick-dots {
+            text-align: center;
+        }
+
+        .slick-dots li {
+            display: inline-block;
+            padding: 1px;
+            background: #ccc;
+            margin: 10px 5px;
+            width: 40px;
+            height: 5px;
+        }
+
+        .slick-dots li.slick-active {
+            background: #18c495;
+        }
+
+        .slick-dots button {
+            display: none;
+        }
+
+        .slick-slide:nth-child(odd) {
+            /* background: blue;*/
+        }
+
+        .slick-slide {
+            opacity: 0.2;
+            transition: all 300ms ease;
+        }
+
+        .slick-current {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .slick-current .desc {
+            opacity: 1;
+        }
+
+        .slick-current .desc h2 {
+            left: 0;
+        }
+
+        .slick-current .desc p {
+            top: 0;
+            opacity: 1;
+        }
+
+        .btn {
+            border-radius: 30px;
+            padding: 10px 20px;
+            border: 4px solid #18c495;
+            text-decoration: none;
+            color: #18c495;
+            font-size: .6em;
+            text-transform: uppercase;
+            display: block;
+            margin: 30px auto 0;
+            max-width: 100px;
+            width: 100%;
+            font-weight: bold;
+            pointer-events: initial;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>CodePen - isotope</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'>
+    <link rel="stylesheet" href="./style2.css">
+
+</head>
+
+<body>
+    <section class="slider">
+        {% for i in '0123456789'|make_list %}
+
+        <div>
+            <img src="data:image/jpeg;base64,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">
+            <div class="desc">
+                <h2>Black Pepper</h2>
+                <p>Fine Grained</p>
+                <a href="Contact.html" class="btn">Contact us</a>
+            </div>
+        </div>
+        {% endfor %}
+        <div>
+            <img src="http://baronwatts.com/tuts/swipe/2.png">
+            <div class="desc">
+                <h2>BOSE SoundLink II</h2>
+                <p>$299.99 - $329.99</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div>
+            <img src="http://baronwatts.com/tuts/swipe/3.png">
+            <div class="desc">
+                <h2>BOSE QC35</h2>
+                <p>$289.99 - $299.99</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div>
+            <img src="http://baronwatts.com/tuts/swipe/4.png">
+            <div class="desc">
+                <h2>BOSE SoundLink II</h2>
+                <p>$299.99 - $329.99</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div>
+            <img src="http://baronwatts.com/tuts/swipe/5.png">
+            <div class="desc">
+                <h2>BOSE QC35</h2>
+                <p>$289.99 - $299.99</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div>
+            <img src="http://baronwatts.com/tuts/swipe/6.png">
+            <div class="desc">
+                <h2>BOSE SoundLink II</h2>
+                <p>$299.99 - $329.99</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- partial -->
+    <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+    <script>
+        function createSlick() {
+
+            $(".slider").not('.slick-initialized').slick({
+                centerMode: true,
+                autoplay: true,
+                dots: true,
+
+                slidesToShow: 3,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        dots: false,
+                        arrows: false,
+                        infinite: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+            });
+
+        }
+
+        createSlick();
+
+        //Will not throw error, even if called multiple times.
+        $(window).on('resize', createSlick);
+
+    </script>
+
+
+</body>
+
+</html>
