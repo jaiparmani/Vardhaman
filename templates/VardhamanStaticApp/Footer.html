@@ -1,51 +1,224 @@
 {% block Footer %}
-
+{% load static %}
 
 
 <!-- footer section starts  -->
 
-<section class="footer">
+<!DOCTYPE html>
+<htm lang="en">
+<head>
 
-    <div class="box-container">
+<title>Vardhaman Spices</title>
 
-        <div class="box">
-            <img src="./image/vardhaman.png" height="100px;" width="150px;" >
-         <br><br>
-            <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
 
-        <div class="box">
-            <h3>Contact info</h3>
-            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-            <a href="#" class="links"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
-            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> mumbai, india - 400104 </a>
-        </div>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
-          
-        </div>
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <div class="box">
-            <p>Send us an enquiry</p>
-            <input type="email" placeholder="your email" class="email">
-            <input type="submit" value="Submit" class="btn">
-          
-        </div>
+<!--PLUGIN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/animation.css">
+
+
+
+<style>
+
+  /* Generic styling */
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer {
+  background-color: #0A0708;
+  color: white;
+  line-height: 1.5;
+}
+footer a {
+  text-decoration: none;
+  color: #eee;
+}
+a:hover {
+  text-decoration: underline;
+}
+.ft-title {
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+/* Sticks footer to bottom */
+
+.container {
+  flex: 1;
+}
+/* Footer main */
+.ft-main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 29.8125rem /* 477px */) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 77.5rem /* 1240px */) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+.ft-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem;
+}
+
+/* Footer main | Newsletter form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+input[type="email"] {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+}
+input[type="submit"] {
+  background-color: #6c853d;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
+}
+/* Footer social */
+.ft-social {
+  padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+  display: flex;
+  justify-content: center;
+  border-top: 1px #777 solid;
+  padding-top: 1.25rem;
+}
+.ft-social-list li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
+/* Footer legal */
+.ft-legal {
+  padding: 0.9375rem 1.875rem;
+  background-color: #333;
+}
+.ft-legal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-legal-list li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+    flex: 1;
+}
+.imglogo{
+padding-top: 0px;
+position: relative;
+}
+</style>
+</head>
+<body>
+
+  <div class="container"></div>
+<footer>
+  <!-- Footer main -->
+  <section class="ft-main">
+
+    <div class="ft-main-item" >
+      <img src="./images/vardhaman.png" height="200px" width="350px"  class="imglogo">
+    
+       </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Main Links</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Products</a></li>
+        <li><a href="#">Our Achievments</a></li>
+        <li><a href="#">Contact Us</a></li>
+      
+      </ul>
     </div>
+    
+    <div class="ft-main-item">
+      <h2 class="ft-title">Information</h2>
+      <ul>
+        <li><a href="#">123456789</a></li>
+        <li><a href="#">abc@gmail.com</a></li>
+        <li> <a href="#">Some Address</a></li>
+      
+ 
+      </ul>
+    </div>
+  
+    <div class="ft-main-item">
+      <h2 class="ft-title">Stay In Touch</h2>
+      <p>Send Us an Enquiry</p>
+      <form>
+        <input type="email" name="email" placeholder="Enter email address">
+        <input type="submit" value="Subscribe">
+      </form>
+    </div>
+  </section>
 
-</section>
+  <!-- Footer social -->
+  <section class="ft-social">
+    <ul class="ft-social-list">
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-github"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+  </section>
+
+  <!-- Footer legal -->
+
+</footer>
+</body>
+<!--ADDITIONAL-->
+<a href="#" id="roll_back" class="animate"><i class="fa fa-angle-up"></i></a>
+
+
+
+
+
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+</body>
+</html>
 
 
 <!-- footer section ends -->

@@ -15,8 +15,8 @@ p {
 }
 
 .slider {
-    max-width: 1000px;
-    width: 90%;
+    max-width: 100%;
+    width: 100%;
     margin: 15px auto;
     background: #ececec;
     border-radius: 5px;

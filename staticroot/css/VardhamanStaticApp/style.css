@@ -28,7 +28,7 @@ html{
 }
 
 body{
-    background:#eedeee;
+    background:white;
 }
 
 section{
@@ -319,7 +319,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../image/bannerbg1.jpeg) no-repeat;
+    background: url("/static/images/1.png") no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 20rem;

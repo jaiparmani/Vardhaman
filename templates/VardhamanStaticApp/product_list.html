@@ -1,28 +1,57 @@
+{% load static %}
+{% include 'VardhamanStaticApp/Navbar.html' %}
 <!DOCTYPE html>
-<html lang="en">
-
+<htm lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CodePen - isotope</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css'>
-    <link rel="stylesheet" href="./style.css">
+
+<title>Our Products</title>
+
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--PLUGIN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/animation.css">
+
 
     <style>
+
+main{
+width:100%;
+height:105vh;
+background-image:url("./images/bannerbg1.jpeg");
+background-size:cover;
+display:flex;
+align-items:center;
+justify-content:left;
+position:relative;
+}
+
         @import url(fontawesome.css);
         @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
 
         /* Basic */
         body {
-            font-family: "Comfortaa", cursive;
+            font-family: "Roboto","sans-serif" cursive;
         }
 
-        *,
-        *:before,
-        *:after {
-            -webkit-box-sizing: inherit;
-            -moz-box-sizing: inherit;
-            box-sizing: inherit;
-        }
+      
 
         /*         section                 */
         .section {
@@ -44,30 +73,23 @@
             padding: 10px auto;
             font-size: 32px;
             font-weight: 700;
-            color: #4b52b6;
+            color: #6c853D;
             background-color: #fff;
             transition: 1s;
         }
 
-        .section-heading h2:hover {
-            font-size: 32px;
-            font-weight: 700;
-            color: #fff;
-            background-color: #4b52b6;
-            transition: 1s;
-        }
-
+       
         .section-heading .line-dec {
             width: 60px;
             height: 3px;
-            background-color: #4b52b6;
+            background-color: #6c853D;
             margin: 10px auto;
         }
 
         .section-heading span {
             margin-top: 5px;
             font-size: 16px;
-            color: #4b52b6;
+            color: #6c853D;
             letter-spacing: 0.5px;
         }
 
@@ -75,10 +97,12 @@
 
         button {
             display: inline-block;
-            padding: 10px 20px;
+
+
+padding: 10px 20px;
             margin: 0px 5px;
             background-color: #fff;
-            color: #4b52b6;
+            color: #6c853D;
             font-size: 12px;
             font-weight: 800;
             letter-spacing: 0.5px;
@@ -92,13 +116,13 @@
 
         button:hover {
             outline: none;
-            background-color: #4b52b6;
-            color: #fff;
+            background-color: black;
+            color: white;
         }
 
         button.active {
             outline: none;
-            background-color: #4b52b6;
+            background-color: #7a7a7a;
             color: #fff;
         }
 
@@ -197,7 +221,7 @@
         figure svg {
             position: relative !important;
             font-size: 18px;
-            background-color: #4b52b6;
+            background-color: #6c853D;
             width: 40px;
             height: 40px;
             padding: 5px;
@@ -255,13 +279,91 @@
 </head>
 
 <body>
+
+    
+    
+    <!--NAVIGATION-->
+    <!-- <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" id="logo"><img src="./images/vardhaman.png" > </a>
+            <a href="#" class="animate">Our Achievments</a>
+            <a href="./aboutus.html" class="animate">About</a>
+            <a href="./contactus.html" class="animate">Contact</a>
+            <a href="./productlist.html" class="animate">Our Products</a>
+            <a href="#" id="active" class="animate">Home</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="NavBar()">&#9776;</a>
+    </div>
+
+
+    <div id="navbar">
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html" id="logo"><img src="./images/vardhaman.png" > </a>
+            <a href="#section4" class="animate">Our Achievments</a>
+            <a href="./aboutus.html" class="animate">About</a>
+            <a href="./contactus.html" class="animate">Contact</a>
+            <a href="./productlist.html" class="animate">Our Products</a>
+            <a href="#" id="active" class="animate">Home</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="NavBar()">&#9776;</a>
+    </div>
+
+    </div>
+    </nav> -->
+
+
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <!-- <div class="logo"><img src="./images/vardhaman.png"></div> -->
+        <a class="logo" href="./index.html">
+            <img src="./images/vardhaman.png" alt="..." class="imglogo">
+          </a>
+        <ul class="links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="./productlist.html">Our Products</a></li>
+            <li><a href="#">Our Achievments</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    
+    
+
+<!--NAVIGATION-->
+<!-- <nav>
+<div class="topnav" id="myTopnav">
+<a href="#home" id="logo"><img src="./images/vardhaman.png" alt="LOGO " height="100px;" width="450px;"> </a>
+<a href="#" class="animate">Our Achievments</a>
+<a href="#about" class="animate">About</a>
+<a href="#contact" class="animate">Contact</a>
+<a href="#contact" class="animate">Our Products</a>
+<a href="#" id="active" class="animate">Home</a>
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="NavBar()">&#9776;</a>
+</div>
+
+</nav> -->
+
+
+
+<!--MAIN-->
+<main >
+<section>
+<em>Freshly Made</em>
+<h1 class="title">We try to provide you with best services available</h1>
+<a href="#" class="btn1">Download Brochure</a>
+</section>
+</main>
+
+
     <!-- partial:index.partial.html -->
     <section class="section " id="section3">
         <div class="container">
             <div class="section-heading">
-                <h2>Types of the weather</h2>
-                <div class="line-dec"></div>
-                <span>Some samples of different types of ... </span>
+                <h2>Types of Pepper</h2>
+               
             </div>
             <div class="row">
                 <div class="isotope-wrapper">
@@ -274,24 +376,20 @@
 
                         <label>
                             <button class="isotope-toolbar-btn" data-type="powder" name="isotope-filter">
-                                <span>powder weather</span>
+                                <span>Pepper Powder </span>
                             </button>
                         </label>
                         <label>
                             <button class="isotope-toolbar-btn" data-type="crack_forms" name="isotope-filter">
-                                <span>crack_forms weather</span>
+                                <span>Pepper Crack</span>
                             </button>
                         </label>
-                        <label>
-                            <button class="isotope-toolbar-btn" data-type="polar" name="isotope-filter">
-                                <span>Polar weather</span>
-                            </button>
-                        </label>
+                     
                     </div>
                     <div class="isotope-box">
                         <div class="isotope-item" data-type="powder">
                             <figure>
-                                <img src="https://ucarecdn.com/b035f4fd-d55a-446f-843c-62715ff7f984/-/preview/-/quality/smart/"
+                                <img src="./images/Black pepper powder 40 mesh  0528.JPG"
                                     alt="sq-sample26" />
                                 <figcaption>
                                     <a href="https://ucarecdn.com/b035f4fd-d55a-446f-843c-62715ff7f984/-/preview/-/quality/smart/"
@@ -314,10 +412,10 @@
 
                         <div class="isotope-item" data-type="crack_forms">
                             <figure>
-                                <img src="https://ucarecdn.com/8fdf3a71-2ed1-49ad-88f3-99b667c8b708/-/preview/-/quality/smart/"
+                                <img src="{% static 'images/Black_pepper_crack.jpg' %}"
                                     alt="sq-sample26" />
                                 <figcaption>
-                                    <a href="https://ucarecdn.com/8fdf3a71-2ed1-49ad-88f3-99b667c8b708/-/preview/-/quality/smart/"
+                                    <a href="{% static 'images/Black_pepper_crack.jpg' %}"
                                         data-lightbox="image" data-title="Caption"><svg style="isolation:isolate"
                                             viewBox="0 0 50 50" width="50pt" height="50pt">
                                             <g>
@@ -331,16 +429,57 @@
                                         </svg></a>
                                     <h4>item </h4>
                                     <span>description </span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="isotope-item" data-type="crack_forms">
+                            <figure>
+                                <img src="{% static 'images/bikaneri_jumbo_crack.jpg' %}" alt="sq-sample26" />
+                                <figcaption>
+                                    <a href="{% static 'images/bikaneri_jumbo_crack.jpg' %}" data-lightbox="image" data-title="Caption"><svg
+                                            style="isolation:isolate" viewBox="0 0 50 50" width="50pt" height="50pt">
+                                            <g>
+                                                <path
+                                                    d=" M 49.334 46.12 L 33.838 30.624 C 36.369 27.403 37.88 23.345 37.88 18.94 C 37.88 8.497 29.384 0 18.94 0 C 8.497 0 0 8.497 0 18.94 C 0 29.384 8.497 37.88 18.94 37.88 C 23.345 37.88 27.403 36.369 30.624 33.838 L 46.12 49.334 C 46.564 49.778 47.146 50 47.727 50 C 48.309 50 48.891 49.778 49.334 49.334 C 50.222 48.447 50.222 47.008 49.334 46.12 Z  M 4.545 18.94 C 4.545 11.003 11.003 4.545 18.94 4.545 C 26.878 4.545 33.335 11.003 33.335 18.94 C 33.335 26.877 26.878 33.335 18.94 33.335 C 11.003 33.335 4.545 26.877 4.545 18.94 Z "
+                                                    fill="white" />
+                                                <path
+                                                    d=" M 23.486 16.668 L 21.213 16.668 L 21.213 14.395 C 21.213 13.14 20.195 12.122 18.94 12.122 C 17.685 12.122 16.667 13.14 16.667 14.395 L 16.667 16.668 L 14.395 16.668 C 13.14 16.668 12.122 17.685 12.122 18.94 C 12.122 20.195 13.14 21.213 14.395 21.213 L 16.667 21.213 L 16.667 23.486 C 16.667 24.741 17.685 25.758 18.94 25.758 C 20.195 25.758 21.213 24.741 21.213 23.486 L 21.213 21.213 L 23.486 21.213 C 24.741 21.213 25.758 20.195 25.758 18.94 C 25.758 17.685 24.741 16.668 23.486 16.668 Z "
+                                                    fill="white" />
+                                            </g>
+                                        </svg></a>
+                                    <h4>item </h4>
+                                    <span>Bikaneri bikaneri_jumbo_crack </span>
                                 </figcaption>
                             </figure>
                         </div>
 
                         <div class="isotope-item" data-type="crack_forms">
                             <figure>
-                                <img src="https://ucarecdn.com/2f58b109-489f-4ad1-b24d-e773f241bf72/-/preview/-/quality/smart/"
+                                <img src="{% static 'images/jumbo_pepper_crack.jpg' %}" alt="sHELLO6" />
+                                <figcaption>
+                                    <a href="{% static 'images/jumbo_pepper_crack.jpg' %}" data-lightbox="image" data-title="Caption"><svg
+                                            style="isolation:isolate" viewBox="0 0 50 50" width="50pt" height="50pt">
+                                            <g>
+                                                <path
+                                                    d=" M 49.334 46.12 L 33.838 30.624 C 36.369 27.403 37.88 23.345 37.88 18.94 C 37.88 8.497 29.384 0 18.94 0 C 8.497 0 0 8.497 0 18.94 C 0 29.384 8.497 37.88 18.94 37.88 C 23.345 37.88 27.403 36.369 30.624 33.838 L 46.12 49.334 C 46.564 49.778 47.146 50 47.727 50 C 48.309 50 48.891 49.778 49.334 49.334 C 50.222 48.447 50.222 47.008 49.334 46.12 Z  M 4.545 18.94 C 4.545 11.003 11.003 4.545 18.94 4.545 C 26.878 4.545 33.335 11.003 33.335 18.94 C 33.335 26.877 26.878 33.335 18.94 33.335 C 11.003 33.335 4.545 26.877 4.545 18.94 Z "
+                                                    fill="white" />
+                                                <path
+                                                    d=" M 23.486 16.668 L 21.213 16.668 L 21.213 14.395 C 21.213 13.14 20.195 12.122 18.94 12.122 C 17.685 12.122 16.667 13.14 16.667 14.395 L 16.667 16.668 L 14.395 16.668 C 13.14 16.668 12.122 17.685 12.122 18.94 C 12.122 20.195 13.14 21.213 14.395 21.213 L 16.667 21.213 L 16.667 23.486 C 16.667 24.741 17.685 25.758 18.94 25.758 C 20.195 25.758 21.213 24.741 21.213 23.486 L 21.213 21.213 L 23.486 21.213 C 24.741 21.213 25.758 20.195 25.758 18.94 C 25.758 17.685 24.741 16.668 23.486 16.668 Z "
+                                                    fill="white" />
+                                            </g>
+                                        </svg></a>
+                                    <h4>item </h4>
+                                    <span>jumbo_pepper_crack </span>
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <div class="isotope-item" data-type="crack_forms">
+                            <figure>
+                                <img src="{% static 'images/pepper_crack_small.jpg' %}"
                                     alt="sq-sample26" />
                                 <figcaption>
-                                    <a href="https://ucarecdn.com/2f58b109-489f-4ad1-b24d-e773f241bf72/-/preview/-/quality/smart/"
+                                    <a href="{% static 'images/pepper_crack_small.jpg' %}"
                                         data-lightbox="image" data-title="Caption"><svg style="isolation:isolate"
                                             viewBox="0 0 50 50" width="50pt" height="50pt">
                                             <g>
@@ -353,10 +492,30 @@
                                             </g>
                                         </svg></a>
                                     <h4>item </h4>
-                                    <span>description </span>
+                                    <span>pepper_crack_small</span>
                                 </figcaption>
                             </figure>
                         </div>
+                                <div class="isotope-item" data-type="crack_forms">
+                                    <figure>
+                                        <img src="{% static 'images/peppercrack.jpg' %}" alt="sq-sample26" />
+                                        <figcaption>
+                                            <a href="{% static 'images/peppercrack.jpg' %}" data-lightbox="image" data-title="Caption"><svg
+                                                    style="isolation:isolate" viewBox="0 0 50 50" width="50pt" height="50pt">
+                                                    <g>
+                                                        <path
+                                                            d=" M 49.334 46.12 L 33.838 30.624 C 36.369 27.403 37.88 23.345 37.88 18.94 C 37.88 8.497 29.384 0 18.94 0 C 8.497 0 0 8.497 0 18.94 C 0 29.384 8.497 37.88 18.94 37.88 C 23.345 37.88 27.403 36.369 30.624 33.838 L 46.12 49.334 C 46.564 49.778 47.146 50 47.727 50 C 48.309 50 48.891 49.778 49.334 49.334 C 50.222 48.447 50.222 47.008 49.334 46.12 Z  M 4.545 18.94 C 4.545 11.003 11.003 4.545 18.94 4.545 C 26.878 4.545 33.335 11.003 33.335 18.94 C 33.335 26.877 26.878 33.335 18.94 33.335 C 11.003 33.335 4.545 26.877 4.545 18.94 Z "
+                                                            fill="white" />
+                                                        <path
+                                                            d=" M 23.486 16.668 L 21.213 16.668 L 21.213 14.395 C 21.213 13.14 20.195 12.122 18.94 12.122 C 17.685 12.122 16.667 13.14 16.667 14.395 L 16.667 16.668 L 14.395 16.668 C 13.14 16.668 12.122 17.685 12.122 18.94 C 12.122 20.195 13.14 21.213 14.395 21.213 L 16.667 21.213 L 16.667 23.486 C 16.667 24.741 17.685 25.758 18.94 25.758 C 20.195 25.758 21.213 24.741 21.213 23.486 L 21.213 21.213 L 23.486 21.213 C 24.741 21.213 25.758 20.195 25.758 18.94 C 25.758 17.685 24.741 16.668 23.486 16.668 Z "
+                                                            fill="white" />
+                                                    </g>
+                                                </svg></a>
+                                            <h4>item </h4>
+                                            <span>peppercrack</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
 
                         <div class="isotope-item" data-type="polar">
                             <figure>
@@ -382,29 +541,7 @@
                             </figure>
                         </div>
 
-                        <div class="isotope-item" data-type="crack_forms">
-                            <figure>
-                                <img src="https://ucarecdn.com/3c6a0810-a471-44d2-a02e-3e19ae0b56e5/-/preview/-/quality/smart/"
-                                    alt="sq-sample26" />
-                                <figcaption>
-                                    <a href="https://ucarecdn.com/3c6a0810-a471-44d2-a02e-3e19ae0b56e5/-/preview/-/quality/smart/"
-                                        data-lightbox="image" data-title="caption"><svg style="isolation:isolate"
-                                            viewBox="0 0 50 50" width="50pt" height="50pt">
-                                            <g>
-                                                <path
-                                                    d=" M 49.334 46.12 L 33.838 30.624 C 36.369 27.403 37.88 23.345 37.88 18.94 C 37.88 8.497 29.384 0 18.94 0 C 8.497 0 0 8.497 0 18.94 C 0 29.384 8.497 37.88 18.94 37.88 C 23.345 37.88 27.403 36.369 30.624 33.838 L 46.12 49.334 C 46.564 49.778 47.146 50 47.727 50 C 48.309 50 48.891 49.778 49.334 49.334 C 50.222 48.447 50.222 47.008 49.334 46.12 Z  M 4.545 18.94 C 4.545 11.003 11.003 4.545 18.94 4.545 C 26.878 4.545 33.335 11.003 33.335 18.94 C 33.335 26.877 26.878 33.335 18.94 33.335 C 11.003 33.335 4.545 26.877 4.545 18.94 Z "
-                                                    fill="white" />
-                                                <path
-                                                    d=" M 23.486 16.668 L 21.213 16.668 L 21.213 14.395 C 21.213 13.14 20.195 12.122 18.94 12.122 C 17.685 12.122 16.667 13.14 16.667 14.395 L 16.667 16.668 L 14.395 16.668 C 13.14 16.668 12.122 17.685 12.122 18.94 C 12.122 20.195 13.14 21.213 14.395 21.213 L 16.667 21.213 L 16.667 23.486 C 16.667 24.741 17.685 25.758 18.94 25.758 C 20.195 25.758 21.213 24.741 21.213 23.486 L 21.213 21.213 L 23.486 21.213 C 24.741 21.213 25.758 20.195 25.758 18.94 C 25.758 17.685 24.741 16.668 23.486 16.668 Z "
-                                                    fill="white" />
-                                            </g>
-                                        </svg></a>
-                                    <h4>item </h4>
-                                    <span>description </span>
-                                </figcaption>
-                            </figure>
-                        </div>
-
+                        
                         <div class="isotope-item" data-type="powder">
                             <figure>
                                 <img src="https://ucarecdn.com/8d6d5266-63de-416f-88d8-3c351d682206/-/preview/-/quality/smart/"
@@ -432,6 +569,8 @@
             </div>
         </div>
     </section>
+
+    
     <!-- partial -->
     <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js'></script>
@@ -458,6 +597,9 @@
 
 // change is-checked class on buttons
     </script>
+
+
+
 </body>
 
 </html>

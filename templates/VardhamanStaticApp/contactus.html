@@ -1,0 +1,313 @@
+{% load static %}
+{% include 'VardhamanStaticApp/Navbar.html' %}
+
+<!DOCTYPE html>
+<htm lang="en">
+<head>
+
+<title>Vardhaman Spices</title>
+
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--PLUGIN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/animation.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<style>
+  main{
+width:100%;
+height:80vh;
+background-image:url("./images/contact.jpg");
+display:flex;
+align-items:center;
+justify-content:left;
+position:relative;
+}
+
+  form { max-width:420px; margin:100px auto; }
+  
+  .feedback-input {
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #6c853d;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  
+  .feedback-input:focus { border:2px solid red; }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  .btncontact {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background:#6c853d;
+    border-radius:5px;
+  
+    cursor:pointer;
+    color:black;
+    font-size:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+    border: 1px solid black;
+  }
+  [type="submit"]:hover { background:black; color: #6c853d; }
+  </style>
+
+</head>
+<body>
+
+
+<!--HEADER-->
+
+<!--HEADER-->
+
+    
+    <!--NAVIGATION-->
+    <nav>
+      <input id="nav-toggle" type="checkbox">
+      <!-- <div class="logo"><img src="./images/vardhaman.png"></div> -->
+      <a class="logo" href="./index.html">
+          <img src="./images/vardhaman.png" alt="..." class="imglogo">
+        </a>
+      <ul class="links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./aboutus.html">About</a></li>
+          <li><a href="./productlist.html">Our Products</a></li>
+          <li><a href="#">Our Achievments</a></li>
+          <li><a href="./contactus.html">Contact Us</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </label>
+  </nav>
+  
+  
+  
+    
+
+<!--NAVIGATION-->
+<!-- <nav>
+<div class="topnav" id="myTopnav">
+<a href="#home" id="logo"><img src="./images/vardhaman.png" alt="LOGO " height="100px;" width="450px;"> </a>
+<a href="#" class="animate">Our Achievments</a>
+<a href="#about" class="animate">About</a>
+<a href="#contact" class="animate">Contact</a>
+<a href="#contact" class="animate">Our Products</a>
+<a href="#" id="active" class="animate">Home</a>
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="NavBar()">&#9776;</a>
+</div>
+
+</nav> -->
+
+
+
+<!--MAIN-->
+<main>
+<section>
+<em>Freshly Made</em>
+<h1 class="title" style="color:white" >We try to provide you with best services available</h1>
+<a href="#" class="btn1" style= "padding-top: 20px;">Download Brochure</a>
+</section>
+</main>
+
+
+
+
+
+
+
+<!--SECTION5-->
+<!-- <div class="section5">
+<section>
+<video loading="lazy" height="250%" width="150%" autoplay>
+    <source src="./images/vvideo.mp4" type="video/mp4">
+  </video>
+</section>
+<section>
+<span>
+<h1 class="title">Our Achievments</h1>
+</span>
+</section>
+</div> -->
+
+<h1 class="title" style="text-align: center; margin-top: 5%;">We Would Love to hear from you</h1>
+
+
+
+<!--SECTION6-->
+<div class="section6" style="margin-top: 5%; margin-bottom: 5%">
+<section>
+<span >
+  <i class="material-icons" style="font-size:100px;color:#6c853d;text-shadow:2px 2px 4px #000000;">phone</i>
+
+<!-- <img src="./images/1.png" alt="" height="200px" width="200px"> -->
+<p>(+x) xxxx xxxxx</p>
+</span>
+<span>
+  <i class="material-icons" style="font-size:100px;color:#6c853d;text-shadow:2px 2px 4px #000000;">email</i>
+<p>support@websitename.com</p>
+</span>
+<span>
+  <i class="material-icons" style="font-size:100px;color:#6c853d;text-shadow:2px 2px 4px #000000;">factory</i>
+<p>0th Floor Auricle Building Levioosa Road<br> P.O Box 0000 - 00000 Province - Country</p>
+</span>
+</section>
+</div>
+
+<h1 class="title" style="text-align: center;">Get In Touch!</h1>
+<div id="section4"style="margin-top: 5%;" >
+<div class="row" >
+  <div class="col-lg-6 col-md-6 col-sm-12" >
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.4773645605924!2d73.10903171472839!3d18.998675387132373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e8159d3fc159%3A0xa1cab9f55fb62e96!2sVardhaman%20Spices%20Food%20Company!5e0!3m2!1sen!2sin!4v1666122810397!5m2!1sen!2sin" width="800" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12" style="background-color:#f5f5f5">
+
+    <form>      
+      <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+      <input name="email" type="text" class="feedback-input" placeholder="Email" />
+      <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+      <input type="submit" value="Submit" class="btn1">
+    </form>
+ 
+  </div>
+    </div>
+
+</div>
+
+
+
+
+<!--FOOTER-->
+<!-- <footer>
+<div class="top_header">
+<section>
+<img src="https://i.postimg.cc/FFJCzwzY/icon-3.png" alt="">
+<h1 class="title">Newsletter</h1>
+<form>
+<fieldset>
+<input type="email" name="email" placeholder="email address*" requried=""><button class="btn2">subscribe</button>
+</fieldset>
+</form>
+</section>
+</div>
+<span class="border-shape"></span>
+<div class="bottom_content">
+<section>
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-telegram"></i></a>
+</section>
+<section>
+<a href="#">Home</a>
+<a href="#">About us</a>
+<a href="#">Order</a>
+<a href="#">Retail</a>
+<a href="#">Member</a>
+<a href="#">Contact Us</a>
+</section>
+</div>
+<div class="copyright">
+Copyright © 2021 websitename - All rights reserved 
+</div>
+</footer>
+ -->
+
+ <div class="container"></div>
+ <footer>
+   <!-- Footer main -->
+   <section class="ft-main">
+ 
+     <div class="ft-main-item" >
+       <img src="./images/vardhaman.png" height="200px" width="350px"  class="imglogo">
+     
+        </div>
+     <div class="ft-main-item">
+       <h2 class="ft-title">Main Links</h2>
+       <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Our Products</a></li>
+         <li><a href="#">Our Achievments</a></li>
+         <li><a href="#">Contact Us</a></li>
+       
+       </ul>
+     </div>
+     
+     <div class="ft-main-item">
+       <h2 class="ft-title">Information</h2>
+       <ul>
+         <li><a href="#">123456789</a></li>
+         <li><a href="#">abc@gmail.com</a></li>
+         <li> <a href="#">Some Address</a></li>
+       
+  
+       </ul>
+     </div>
+   
+     <div class="ft-main-item">
+       <h2 class="ft-title">Send us an Enquiry</h2>
+  
+       <form>
+         <input type="email" name="email" placeholder="Enter email address">
+         <input type="submit" value="Subscribe">
+       </form>
+     </div>
+<!--ADDITIONAL-->
+<a href="#" id="roll_back" class="animate"><i class="fa fa-angle-up"></i></a>
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+</body>
+</html>
+
+
+{% include 'VardhamanStaticApp/Footer.html' %}

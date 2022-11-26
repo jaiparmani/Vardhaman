@@ -1,36 +1,48 @@
-
 {% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block Navbar %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/VardhamanStaticApp/style.css' %}">
+
+</head>
+
+<body>
 
 
+    {% block Navbar %}
 
-<!-- header section starts  -->
 
-<header class="header">
-    <a href="#" class="logo"> <img src = "{% static 'images/1.png' %}" alt="" height="100px;" width="180px;"> </a>
+    <!-- {% include 'VardhamanStaticApp/contact_bubble.html' %} -->
+    <link rel="stylesheet" href="css/main.css">
 
-    <!-- <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a> -->
-
-    <nav class="navbar">
-        <a href="#products">products</a>
-        <a href="#categories">Services</a>
-        <a href="#review">How To Order</a>
-        <a href="#blogs">About us</a>
-        <a href="#blogs">Contact Us</a>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <!-- <div class="logo"><img src="./images/vardhaman.png"></div> -->
+        <a class="logo" href="./index.html">
+            <img src="./images/vardhaman.png" alt="..." class="imglogo">
+        </a>
+        <ul class="links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="./productlist.html">Our Products</a></li>
+            <li><a href="#">Our Achievments</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
     </nav>
 
-    <div class="icons">
-
-        <div class="fas fa-user" id="login-btn"></div>
-    </div>
-
-    
-</header>
 
 
+    {% endblock %}
+</body>
 
-
-
-
-{% endblock %}
+</html>

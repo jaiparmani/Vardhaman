@@ -1,10 +1,7 @@
 
-{% include 'VardhamanStaticApp/Navbar.html' %}
-{% include 'VardhamanStaticApp/Contact.html' %}
-{% include 'VardhamanStaticApp/home.html' %}
-{% include 'VardhamanStaticApp/about_us.html' %}
 
 
+{% include 'VardhamanStaticApp/Footer.html' %}
 
 {% load static %}
 <!DOCTYPE html>
@@ -16,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vardhaman Spices</title>
     
-        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
     
         <!-- font awesome cdn link  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -36,17 +33,12 @@
   
 </head>
 <body>
-    Hi
-<a lass="logo"> <img src="{% static '/images/vbg1.jpg' %}" alt="Users/jaiparmani/VardhamanWebAppp/VardhamanSpices/static/images/vbg1.jpg" height="100px;" width="180px;"> </a>
    {% block content %}
-        Hello
    {% endblock %}
-   {% include 'VardhamanStaticApp/home.html' %}
-{% include 'VardhamanStaticApp/process.html' %}
+
+
 <script>
         console.log("{% static 'images/vbg1.jpg' %}")
 </script>
-{% include 'VardhamanStaticApp/slider.html' %}
 </body>
 </html>
-{% include 'VardhamanStaticApp/Footer.html' %}

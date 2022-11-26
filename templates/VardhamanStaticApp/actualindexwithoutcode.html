@@ -1,0 +1,381 @@
+{% load static %}
+{% include 'VardhamanStaticApp/Navbar.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Vardhaman Spices</title>
+
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--PLUGIN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" href="{% static 'css/VardhamanStaticApp/style.css' %}">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/animation.css">
+
+</head>
+<body>
+
+
+<!--HEADER-->
+
+<!--HEADER-->
+
+    
+    <!--NAVIGATION-->
+    <!-- <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" id="logo"><img src="./images/vardhaman.png" > </a>
+            <a href="#" class="animate">Our Achievments</a>
+            <a href="./aboutus.html" class="animate">About</a>
+            <a href="./contactus.html" class="animate">Contact</a>
+            <a href="./productlist.html" class="animate">Our Products</a>
+            <a href="#" id="active" class="animate">Home</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="NavBar()">&#9776;</a>
+    </div>
+
+
+    <div id="navbar">
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html" id="logo"><img src="./images/vardhaman.png" > </a>
+            <a href="#section4" class="animate">Our Achievments</a>
+            <a href="./aboutus.html" class="animate">About</a>
+            <a href="./contactus.html" class="animate">Contact</a>
+            <a href="./productlist.html" class="animate">Our Products</a>
+            <a href="#" id="active" class="animate">Home</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="NavBar()">&#9776;</a>
+    </div>
+
+    </div>
+    </nav> -->
+
+
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <!-- <div class="logo"><img src="./images/vardhaman.png"></div> -->
+        <a class="logo" href="./index.html">
+            <img src="./images/vardhaman.png" alt="..." class="imglogo">
+          </a>
+        <ul class="links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="./productlist.html">Our Products</a></li>
+            <li><a href="#">Our Achievments</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    
+    
+    
+    
+
+<!--NAVIGATION-->
+<!-- <nav>
+<div class="topnav" id="myTopnav">
+<a href="#home" id="logo"><img src="./images/vardhaman.png" alt="LOGO " height="100px;" width="450px;"> </a>
+<a href="#" class="animate">Our Achievments</a>
+<a href="#about" class="animate">About</a>
+<a href="#contact" class="animate">Contact</a>
+<a href="#contact" class="animate">Our Products</a>
+<a href="#" id="active" class="animate">Home</a>
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="NavBar()">&#9776;</a>
+</div>
+
+</nav> -->
+
+
+
+<!--MAIN-->
+<main>
+<section>
+<em>Freshly Made</em>
+<h1 class="title">We try to provide you with best services available</h1>
+<a href="#" class="btn1">Download Brochure</a>
+</section>
+</main>
+
+
+
+
+<!--SECTION1-->
+<!-- <div class="section1">
+<div class="slider">
+<div class="slide-track">
+<div class="slide">
+<img src="./images/vardhaman.png" height="100" alt="" />
+</div>
+<div class="slide">
+<img src="./images/vardhaman.png" height="100" alt="" />
+</div>
+<div class="slide">
+<img src="./images/vardhaman.png" height="100" alt="" />
+</div>
+<div class="slide">
+<img src="./images/vardhaman.png" height="100" alt="" />
+</div>
+<div class="slide">
+<img src="./images/vardhaman.pngg" height="100" alt="" />
+</div>
+<div class="slide">
+<img src="./images/vardhaman.png" height="100" alt="" />
+</div>
+<div class="slide">
+<img src="./images/vardhaman.png" height="100" alt="" />
+</div>
+<div class="slide">
+<img src="./images/vardhaman.png" height="100" alt="" />
+</div>
+<div class="slide">
+<img src="./images/vardhaman.png" height="100" alt="" />
+</div>
+<div class="slide">
+<img src="./images/vardhaman.png" height="100" alt="" />
+</div>
+<div class="slide">
+<img src="./images/vardhaman.png" height="100" alt="" />
+</div>
+<div class="slide">
+<img src="./images/vardhaman.png" height="100" alt="" />
+</div>
+<div class="slide">
+<img src="./images/vardhaman.png" height="100" alt="" />
+</div>
+<div class="slide">
+<img src="./images/vardhaman.png" height="100" alt="" />
+</div>
+</div>
+</div>
+</div> -->
+
+
+
+<!--SECTION2-->
+<div class="section2">
+<section>
+<em>Category</em>
+<br>
+<br>
+<br>
+<h1 class="title">Our Categories</h1>
+<p>These are our categories of spices, we are excited to hear from you</p>
+</section>
+<section>
+<span>
+<img src="./images/Black pepper powder 40 mesh  0528.JPG" alt="" loading="lazy" height="400px" >
+<p>Pepper powder</p>
+</span>
+<span>
+<img src="./images/Bikaneri Jumbo Crack 0483.JPG" alt="" loading="lazy">
+<p>Pepper Crack</p>
+</span>
+
+</section>
+
+</div>
+<!-- <a href="./productlist.html" class="btn1">View more</a> -->
+
+
+<!--SECTION3-->
+<div class="section3">
+<section>
+<figure><img src="./images/White Pepper Coose Powder 0477.JPG" alt="" loading="lazy"></figure>
+</section>
+<section>
+<span>
+<em>About Us</em>
+<h1 class="title">We try to give you the best quality spices available</h1>
+<p>I Picked Up A Proposal That Came From A Relative,” She Reminisces, “And From Thereon, I Learnt The Technique Of Turning Black Peppercorns Into White.</p>
+<p>With An Independent Loan Of Rs 3Lakhs, She Learnt The Ropes Of Business Quickly, And What Started As A One-Machine Factory, Today, We Have Nearly 13 Machines For Different Processes</p>
+<a href="./aboutus.html" class="btn1">Read more</a>
+</span>
+</section>
+</div>
+
+
+
+
+<!--SECTION4-->
+<div class="section4">
+<section>
+<span>
+
+<h1 class="title">Our Achievments</h1>
+<p>Here are some testimonials of our hardwork throughout the years</p>
+</span>
+</section>
+<section>
+
+  <video width="100%" loop="true" autoplay="true" controls >
+
+    <source src="./images/vvideo.mp4"
+            type="video/webm">
+
+    <source src="images/vvideo.mp4"
+            type="video/mp4">
+
+  
+</video>
+
+  
+</section>
+</div>
+
+
+
+
+
+
+<!--SECTION6-->
+<div class="section6">
+    <h1 class="title" style="text-align: center;">How to Order</h1>
+<section>
+   
+<span >
+<img src="./images/1.png" alt="" height="200px" width="200px" class="imgres">
+
+</span>
+<span>
+<img src="./images/2.png" alt="" height="200px" width="200px" class="imgres">
+
+</span>
+<span>
+<img src="./images/3.png" alt="" height="200px" width="200px"class="imgres">
+
+</span>
+</section>
+</div>
+
+
+
+
+<!--FOOTER-->
+<!-- <footer>
+<div class="top_header">
+<section>
+<img src="https://i.postimg.cc/FFJCzwzY/icon-3.png" alt="">
+<h1 class="title">Newsletter</h1>
+<form>
+<fieldset>
+<input type="email" name="email" placeholder="email address*" requried=""><button class="btn2">subscribe</button>
+</fieldset>
+</form>
+</section>
+</div>
+<span class="border-shape"></span>
+<div class="bottom_content">
+<section>
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-telegram"></i></a>
+</section>
+<section>
+<a href="#">Home</a>
+<a href="#">About us</a>
+<a href="#">Order</a>
+<a href="#">Retail</a>
+<a href="#">Member</a>
+<a href="#">Contact Us</a>
+</section>
+</div>
+<div class="copyright">
+Copyright © 2021 websitename - All rights reserved 
+</div>
+</footer>
+ -->
+
+<!--ADDITIONAL-->
+
+
+
+
+<div class="container"></div>
+<footer>
+  <!-- Footer main -->
+  <section class="ft-main">
+
+    <div class="ft-main-item" >
+      <img src="./images/vardhaman.png" height="200px" width="350px"  class="imglogo">
+    
+       </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Main Links</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Products</a></li>
+        <li><a href="#">Our Achievments</a></li>
+        <li><a href="#">Contact Us</a></li>
+      
+      </ul>
+    </div>
+    
+    <div class="ft-main-item">
+      <h2 class="ft-title">Information</h2>
+      <ul>
+        <li><a href="#">123456789</a></li>
+        <li><a href="#">abc@gmail.com</a></li>
+        <li> <a href="#">Some Address</a></li>
+      
+ 
+      </ul>
+    </div>
+  
+    <div class="ft-main-item">
+      <h2 class="ft-title">Send us an Enquiry</h2>
+ 
+      <form>
+        <input type="email" name="email" placeholder="Enter email address">
+        <input type="submit" value="Subscribe">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer social -->
+  <!-- <section class="ft-social">
+    <ul class="ft-social-list">
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-github"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+  </section> -->
+
+  <!-- Footer legal -->
+
+</footer>
+<a href="#" id="roll_back" class="animate"><i class="fa fa-angle-up"></i></a>
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
+</body>
+</html>
